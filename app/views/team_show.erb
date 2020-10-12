@@ -1,0 +1,13 @@
+<h1> MY TEAM SHOW PAGE!! </h1>
+
+<h2> <%= @team.name %> </h2>
+<br>
+<h3> Team Motto: <%= @team.motto %>! </h3>
+
+<br><br>
+
+<% @heroes.each do |h| %>
+<h2>Hero Name: <%= h.name %></h2>
+<h4>Hero Power: <%= h.power %></h4>
+<h4>Hero Biography: <%= h.biography %></h4>
+<% end %>
